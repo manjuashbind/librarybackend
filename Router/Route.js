@@ -1,6 +1,6 @@
 const express=require('express')
 
-// const appMiddleware=require('../Middleware/appMiddleware')
+ const appMiddleware=require('../Middleware/appMiddleware')
 const bookController=require('../Controllers/bookController')
 const router=new express.Router()
 

@@ -5,13 +5,13 @@ const app=express();
 const cors=require('cors')
 const router=require('./Router/Route')
 const db=require('./db')
-// const appMiddleware=require('./Middleware/appMiddleware')
+const appMiddleware=require('./Middleware/appMiddleware')
 
 app.use(cors())
 
 app.use(express.json())
 app.use(router)
-// app.use(appMiddleware)
+ app.use(appMiddleware)
 
 
 const port=4000 || process.env.port;
